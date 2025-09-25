@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Editar Missão</title></head>
+<body>
+<h1>Editar Missão</h1>
+<form th:action="@{/missoes/editar/{id}(id=${missao.id})}" method="post" th:object="${missao}">
+    <input type="text" th:field="*{descricao}" placeholder="Descrição"/>
+    <input type="text" th:field="*{prazo}" placeholder="Prazo"/>
+    <input type="number" th:field="*{recompensa}" placeholder="Recompensa"/>
+    <button type="submit">Salvar</button>
+</form>
+</body>
+</html>
