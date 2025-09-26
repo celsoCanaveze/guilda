@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Missões</title></head>
+<body>
+<h1>Missões</h1>
+<a href="/missoes/nova">Criar nova missão</a>
+<ul>
+    <li th:each="m : ${missoes}">
+        <span th:text="${m.descricao}"></span> - <span th:text="${m.recompensa}"></span>
+        <a th:href="@{/missoes/editar/{id}(id=${m.id})}">Editar</a>
+        <a th:href="@{/missoes/deletar/{id}(id=${m.id})}">Deletar</a>
+    </li>
+</ul>
+</body>
+</html>
