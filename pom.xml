@@ -11,7 +11,7 @@
 	<artifactId>guilda</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>guilda</name>
-	<description>Demo project for Spring Boot</description>
+	<description>App guilda</description>
 	<url />
 	<licenses>
 		<license />
@@ -82,17 +82,6 @@
 			<scope>test</scope>
 		</dependency>
 		
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-oauth2-client</artifactId>
-		</dependency>
-
-		
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-oauth2-authorization-server</artifactId>
-			<version>1.5.2</version>
-		</dependency>
 	</dependencies>
 
 	<build>
